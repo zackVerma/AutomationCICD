@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="10" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-06T06:17:23 IST" name="Suite" finished-at="2025-05-06T06:18:20 IST" duration-ms="57272">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.invalidEmptyValuesErrorValidation()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" name="invalidEmptyValuesErrorValidation" class="seleniumwithmukul.tests.ErrorValidations"/>
+        <method signature="ErrorValidations.invalidPasswordErrorValidation()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" name="invalidPasswordErrorValidation" class="seleniumwithmukul.tests.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" name="submitOrder" class="seleniumwithmukul.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-05-06T06:17:23 IST" name="Error Validation" finished-at="2025-05-06T06:18:14 IST" duration-ms="50659">
+      <class name="seleniumwithmukul.tests.ErrorValidations">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:23 IST" name="launchApplication" finished-at="2025-05-06T06:17:30 IST" duration-ms="7313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidEmailErrorValidation()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:30 IST" name="invalidEmailErrorValidation" finished-at="2025-05-06T06:17:31 IST" duration-ms="923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:31 IST" name="tearDown" finished-at="2025-05-06T06:17:31 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:32 IST" name="launchApplication" finished-at="2025-05-06T06:17:36 IST" duration-ms="4023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="invalidEmptyValuesErrorValidation()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:36 IST" name="invalidEmptyValuesErrorValidation" finished-at="2025-05-06T06:17:49 IST" duration-ms="13909" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [class*='flyInOut']' (tried for 7 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [class*='flyInOut']' (tried for 7 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at seleniumwithmukul.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:46)
+at seleniumwithmukul.pageobjects.LandingPage.getErrorMessage(LandingPage.java:36)
+at seleniumwithmukul.tests.ErrorValidations.invalidEmptyValuesErrorValidation(ErrorValidations.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='flyInOut']"}
+  (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c05f7d16c5dfc8dc56b006e5e294f0b, findElement {using=css selector, value=[class*='flyInOut']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mverma\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50490}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50490/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c05f7d16c5dfc8dc56b006e5e294f0b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmptyValuesErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:49 IST" name="tearDown" finished-at="2025-05-06T06:17:50 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:50 IST" name="launchApplication" finished-at="2025-05-06T06:17:54 IST" duration-ms="4286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidEmptyValuesErrorValidation()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:17:54 IST" name="invalidEmptyValuesErrorValidation" finished-at="2025-05-06T06:18:08 IST" duration-ms="13852" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [class*='flyInOut']' (tried for 7 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [class*='flyInOut']' (tried for 7 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at seleniumwithmukul.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:46)
+at seleniumwithmukul.pageobjects.LandingPage.getErrorMessage(LandingPage.java:36)
+at seleniumwithmukul.tests.ErrorValidations.invalidEmptyValuesErrorValidation(ErrorValidations.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='flyInOut']"}
+  (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af00d9a33324ef27d17b256c62f48eda, findElement {using=css selector, value=[class*='flyInOut']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\mverma\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50559}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50559/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af00d9a33324ef27d17b256c62f48eda
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmptyValuesErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:18:09 IST" name="tearDown" finished-at="2025-05-06T06:18:09 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:18:09 IST" name="launchApplication" finished-at="2025-05-06T06:18:13 IST" duration-ms="3967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidPasswordErrorValidation()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:18:13 IST" name="invalidPasswordErrorValidation" finished-at="2025-05-06T06:18:14 IST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.ErrorValidations@36804139]" started-at="2025-05-06T06:18:14 IST" name="tearDown" finished-at="2025-05-06T06:18:14 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumwithmukul.tests.ErrorValidations -->
+    </test> <!-- Error Validation -->
+    <test started-at="2025-05-06T06:17:23 IST" name="Submit Order Test" finished-at="2025-05-06T06:18:20 IST" duration-ms="57272">
+      <class name="seleniumwithmukul.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:23 IST" name="launchApplication" finished-at="2025-05-06T06:17:32 IST" duration-ms="8087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:32 IST" name="submitOrder" data-provider="getData" finished-at="2025-05-06T06:17:41 IST" duration-ms="9078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Engineer@17, email=qaEngineer@test.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:41 IST" name="tearDown" finished-at="2025-05-06T06:17:41 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:41 IST" name="launchApplication" finished-at="2025-05-06T06:17:45 IST" duration-ms="4028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:45 IST" name="submitOrder" data-provider="getData" finished-at="2025-05-06T06:17:50 IST" duration-ms="5125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Engineer@18, email=devEngineer@test.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:50 IST" name="tearDown" finished-at="2025-05-06T06:17:50 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:50 IST" name="launchApplication" finished-at="2025-05-06T06:17:55 IST" duration-ms="4570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:17:55 IST" name="submitOrder" data-provider="getData" finished-at="2025-05-06T06:18:04 IST" duration-ms="9193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Engineer@19, email=opsEngineer@test.com, productName=IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:04 IST" name="tearDown" finished-at="2025-05-06T06:18:04 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:04 IST" name="launchApplication" finished-at="2025-05-06T06:18:08 IST" duration-ms="4074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:08 IST" name="OrderHistoryTest" data-provider="getData" finished-at="2025-05-06T06:18:10 IST" depends-on-methods="seleniumwithmukul.tests.SubmitOrderTest.submitOrder" duration-ms="1290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Engineer@17, email=qaEngineer@test.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:10 IST" name="tearDown" finished-at="2025-05-06T06:18:10 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:10 IST" name="launchApplication" finished-at="2025-05-06T06:18:14 IST" duration-ms="4141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:14 IST" name="OrderHistoryTest" data-provider="getData" finished-at="2025-05-06T06:18:15 IST" depends-on-methods="seleniumwithmukul.tests.SubmitOrderTest.submitOrder" duration-ms="1275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Engineer@18, email=devEngineer@test.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:15 IST" name="tearDown" finished-at="2025-05-06T06:18:15 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:15 IST" name="launchApplication" finished-at="2025-05-06T06:18:19 IST" duration-ms="3602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:19 IST" name="OrderHistoryTest" data-provider="getData" finished-at="2025-05-06T06:18:20 IST" depends-on-methods="seleniumwithmukul.tests.SubmitOrderTest.submitOrder" duration-ms="1083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Engineer@19, email=opsEngineer@test.com, productName=IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumwithmukul.tests.SubmitOrderTest@790da477]" started-at="2025-05-06T06:18:20 IST" name="tearDown" finished-at="2025-05-06T06:18:20 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumwithmukul.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>

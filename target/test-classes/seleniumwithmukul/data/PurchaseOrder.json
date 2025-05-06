@@ -1,0 +1,17 @@
+[
+	{
+		"email":"qaEngineer@test.com", 
+		"password":"Engineer@17", 
+		"productName":"ZARA COAT 3"	
+	},
+	{
+		"email":"devEngineer@test.com", 
+		"password":"Engineer@18", 
+		"productName":"ADIDAS ORIGINAL"		
+	},
+	{
+		"email":"opsEngineer@test.com", 
+		"password":"Engineer@19", 
+		"productName":"IPHONE 13 PRO"		
+	}
+]
